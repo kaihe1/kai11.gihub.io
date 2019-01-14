@@ -3,7 +3,7 @@
   <body>
     <script>
       var xmlhttp = new XMLHttpRequest();
-      xmlhttp.onreadstatechange = function(){
+      xmlhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
           var mydata = JSON.parse(this.responseText);
           window.alert(mydata.name);
