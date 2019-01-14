@@ -1,13 +1,12 @@
 <html>
   <head>  </head>
   <body>
-    <h1 id="guy"></h1>
     <script>
       var xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
           var mydata = JSON.parse(this.responseText);
-          docuemnt.getElementById('guy').innerHTML = mydata.name + " is gay." ;
+          window.alert(mydata.name);
         }
       };
       xmlhttp.open("GET","sample.json",true);
