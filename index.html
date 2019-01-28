@@ -1,5 +1,6 @@
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
     <style>
     #title{
       font-size:70px;
@@ -13,11 +14,47 @@
         margin-left:20px;
         background-size:135%;
     }
+    #p1{
+      font-size:30px;
+      color:red;
+    }
+    #user{
+      height:120px;
+      width:220px;
+      font-size:100px;
+    }
+    #h1{
+      font-size:120px;
+    }
+    #button1{
+      width:120px;
+      height:50px;
+      float:right;
+      
+    }
+    #test{
+        height:50vh;
+        width:25vw;
+        float:left;
+        border: double;
+        margin-left:20px;
+        font-size:20px;
+    }
     </style>
-    <script src="back.js"></script>
   </head>
 <body>
 <h1 id="title"><center>一番お肉</center></h1>
-<div id="steak"></div>
+<div id="steak">
+  <h1 id="Gsteak"></h1>
+  <p id="p1">How many do you wanted to buy?
+  <br>
+  <input type="number" id="user" min=0>
+  <button onclick="purchase()" id="button1">Purchase</button>
+  </p>
+</div>
+<div id="test">
+  <ol></ol>
+</div>
+<script src="back.js"></script>
 </body>
 </html>
