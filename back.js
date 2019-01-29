@@ -4,17 +4,17 @@ var de =[];
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function(){
   if(this.readyState == 4 && this.status == 200){
-    var mydata = JSON.parse(this.responseText);
-    window.alert(mydata.meats[0]);
-    var gsteak= mydata.meats[0].name;
+    var storedata = JSON.parse(this.responseText);
+    window.alert(storedata.meats[0]);
+    var gsteak= storedata.meats[0].name;
     meats.push(gsteak);
-    var psteak = mydata.meats[0].price;
+    var psteak = storedata.meats[0].price;
     prices.push(psteak);
-    var dsteak = mydata.meats[0].descriptions;
+    var dsteak = storedata.meats[0].descriptions;
     de.push(dsteak);
-    document.getElementById('Gsteak').innerHTML = mydata.meats[0].name;
-    document.getElementById('p1').innerHTML =  mydata.meats[0].price;
-    document.getElementById('d1').innerHTML =  mydata.meats[0].descriptions;
+    document.getElementById('Gsteak').innerHTML = storedata.meats[0].name;
+    document.getElementById('p1').innerHTML =  storedata.meats[0].price;
+    document.getElementById('d1').innerHTML =  storedata.meats[0].descriptions;
 }
 };
 xmlhttp.open("GET","meat.json", true);
