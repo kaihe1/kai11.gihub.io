@@ -20,7 +20,7 @@ function purchase1(){
         var x = document.getElementById('user1').value;
         document.getElementById('user1').value = "";
         var li = document.createElement('li');
-        var newText = document.createTextNode(x + meats[0]);
+        var newText = document.createTextNode(x +" "+ meats[0]);
         li.appendChild(newText);
         var olTag = document.getElementsByTagName('ol')[0];
         olTag.appendChild(li);
