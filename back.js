@@ -21,6 +21,7 @@ function purchase1(){
         document.getElementById('user1').value = "";
         var li = document.createElement('li');
         var newText = document.createTextNode(x +" "+ meats[0]);
+        window.alert(meats[0] + x + "works");
         li.appendChild(newText);
         var olTag = document.getElementsByTagName('ol')[0];
         olTag.appendChild(li);
