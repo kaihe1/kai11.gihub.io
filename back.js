@@ -17,7 +17,7 @@ xmlhttp.onreadystatechange = function(){
     document.getElementById('d1').innerHTML =  mydata.meats[0].descriptions;
 }
 };
-xmlhttp.open("GET" , "sample.json", true);
+xmlhttp.open("GET","sample.json", true);
 xmlhttp.send;
 
 function purchase1(){
