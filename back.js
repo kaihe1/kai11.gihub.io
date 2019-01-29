@@ -1,6 +1,5 @@
-
-  var meat =[];
-var price= [];
+var meats=[];
+var prices= [];
 var tax = 1.04712;
 
 var xmlhttp = new XMLHttpRequest();
@@ -10,7 +9,7 @@ xmlhttp.onreadystatechange = function(){
     var gsteak= mydata.meats[0].name;
     meats.push(gsteak);
     var psteak = mydata.meats[0].price;
-    price.push(psteak);
+    prices.push(psteak);
     document.getElementById('Gsteak').innerHTML = mydata.meats[0].name;
     document.getElementById('p1').innerHTML = "$" + mydata.meats[0].price;
 }
