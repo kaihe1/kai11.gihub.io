@@ -1,0 +1,36 @@
+{
+    "meats": [{
+            "name": "Grilled Steak",
+            "price": 22,
+            "descriptions": "Juicy meat and a great crust"
+        },
+        {
+            "name": "Grilled Salmon",
+            "price": 17,
+            "descriptions": "Season salmon fillets with lemon pepper, garlic powder, and salt"
+
+        },
+        {
+            "name": "Grilled Chicken",
+            "price": 14,
+            "descriptions": "Delicious, never-dry juicy and flavorful"
+
+        },
+        {
+            "name": "Grilled Shrimp",
+            "price": 20,
+            "descriptions": "Skewers of big shrimp flavored with lemon, capers and oregano"
+        },
+        {
+            "name": "Grilled Pork",
+            "price": 18,
+            "descriptions": "Juicy and tender"
+        },
+        {
+            "name": "Grilled Goat",
+            "price": 21,
+            "descriptions": "Juicy and never-dry"
+        }
+
+    ]
+}
