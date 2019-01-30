@@ -12,7 +12,7 @@
         float:left;
         border: double;
         margin-left:20vh;
-        background-size:135%;
+        background-size:140%;
     }
     #salmon{
         height:50vh;
@@ -21,7 +21,7 @@
         float:left;
         border: double;
         margin-left:20px;
-        background-size:135%;
+        background-size:140%;
     }
     #chicken{
         height:50vh;
@@ -30,7 +30,7 @@
         float:left;
         border: double;
         margin-left:20px;
-        background-size:135%;
+        background-size:140%;
     }
     #shrimp{
         height:50vh;
@@ -39,7 +39,7 @@
         float:left;
         border: double;
         margin-left:20vh;
-        background-size:135%;
+        background-size:140%;
     }
     #pork{
         height:50vh;
@@ -48,7 +48,7 @@
         float:left;
         border: double;
         margin-left:20px;
-        background-size:135%;
+        background-size:140%;
     }
     #goat{
         height:50vh;
@@ -57,35 +57,35 @@
         float:left;
         border: double;
         margin-left:20px;
-        background-size:135%;
+        background-size:140%;
     }
     #user1{
-      height:120px;
+      height:90px;
       width:220px;
       font-size:100px;
     }
     #user2{
-      height:120px;
+      height:90px;
       width:220px;
       font-size:100px;
     }
     #user3{
-      height:120px;
+      height:90px;
       width:220px;
       font-size:100px;
     }
     #user4{
-      height:120px;
+      height:90px;
       width:220px;
       font-size:100px;
     }
     #user5{
-      height:120px;
+      height:90px;
       width:220px;
       font-size:100px;
     }
     #user6{
-      height:120px;
+      height:90px;
       width:220px;
       font-size:100px;
     }
@@ -94,36 +94,36 @@
     }
     #button1{
       width:120px;
-      height:50px;
+      height:40px;
       float:right;
       
     }
         #button2{
       width:120px;
-      height:50px;
+      height:40px;
       float:right;
       
     }    #button3{
       width:120px;
-      height:50px;
+      height:40px;
       float:right;
       
     }
         #button4{
       width:120px;
-      height:50px;
+      height:40px;
       float:right;
       
     }
         #button5{
       width:120px;
-      height:50px;
+      height:40px;
       float:right;
       
     }
         #button6{
       width:120px;
-      height:50px;
+      height:40px;
       float:right;
       
     }
@@ -135,6 +135,9 @@
         margin-left:20vh;
         font-size:20px;
     }
+    p{
+      font-size:30px;
+      color:red;    }
     </style>
   </head>
 <body>
@@ -163,6 +166,7 @@
 <div id="chicken">
   <h1 id="Gchicken"></h1>
   <p id="p3"></p>
+  <p id="d3"></p>
   <br>
   <input type="number" id="user3" min=0>
   <button onclick="purchase3()" id="button3">Purchase</button>
@@ -172,6 +176,7 @@
 <div id="shrimp">
   <h1 id="Gshrimp"></h1>
   <p id="p4"></p>
+  <p id="d4"></p>
   <br>
   <input type="number" id="user4" min=0>
   <button onclick="purchase4()" id="button4">Purchase</button>
@@ -181,6 +186,7 @@
 <div id="pork">
   <h1 id="Gpork"></h1>
   <p id="p5"></p>
+  <p id="d5"></p>
   <br>
   <input type="number" id="user5" min=0>
   <button onclick="purchase5()" id="button5">Purchase</button>
@@ -190,6 +196,7 @@
 <div id="goat">
   <h1 id="Ggoat"></h1>
   <p id="p6"></p>
+  <p id="d6"></p>
   <br>
   <input type="number" id="user6" min=0>
   <button onclick="purchase6()" id="button6">Purchase</button>
@@ -198,6 +205,7 @@
 
 <div id="result">
   <ol></ol>
+  <button onclick="submit()">submit</button>
 </div>
 <script src="back.js"></script>
 </body>

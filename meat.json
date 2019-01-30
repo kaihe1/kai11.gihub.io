@@ -1,5 +1,6 @@
 {
-    "meats": [{
+    "meats": [
+        {
             "name": "Grilled Steak",
             "price": 22,
             "descriptions": "Juicy meat and a great crust"
