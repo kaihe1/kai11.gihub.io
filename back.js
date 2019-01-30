@@ -86,6 +86,7 @@ function purchase1(){
         var subtotal = (x * 22).toFixed(2);
         var total = ((x * 22) * 1.04712).toFixed(2);
         totalp.push(total);
+        localStorage.setItem("total", total);
         var li = document.createElement('li');
         var newText = document.createTextNode(x + " Order of " +" "+ meats[0] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
         li.appendChild(newText);
@@ -137,8 +138,8 @@ function purchase5(){
   var x = document.getElementById('user5').value;
   document.getElementById('user5').value = "";
   var subtotal = (x * 18).toFixed(2);
-  var total = ((x * 18) * 1.04712).toFixed(2)
-  totalp.push(total);;
+  var total = ((x * 18) * 1.04712).toFixed(2);
+  totalp.push(total);
   var li = document.createElement('li');
   var newText = document.createTextNode(x + " Order of " +" "+ meats[4] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
   li.appendChild(newText);
@@ -160,6 +161,6 @@ function purchase6(){
 }
 
 function sumbit(){
-  window.alert(totalp);
+  localStorage.
   
   }
