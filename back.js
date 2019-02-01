@@ -184,3 +184,14 @@ setInterval(function(){
     location.reload();
   }
 }, 2000);
+var li = document.createElement('li'); //create list
+                var liText = document.createTextNode(localStorage.getItem("item1")); //get info from previous page
+                li.appendChild(liText); //append text to li
+                ul.appendChild(li); //append li to ul
+                if (total <= 0) { //if no order, remove li
+                        li.removeChild(liText);
+                }
+                var li2 = document.createElement('li');
+                var liText2 = document.createTextNode(localStorage.getItem("item2"));
+                li2.appendChild(liText2);
+                ul.appendChild(li2);
