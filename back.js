@@ -87,11 +87,13 @@ function purchase1(){
         var total = ((x * 22) * 1.04712).toFixed(2);
         totalp.push(total);
         localStorage.setItem("tota1", total);
+
         var li = document.createElement('li');
         var newText = document.createTextNode(x + " Order of " +" "+ meats[0] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
         li.appendChild(newText);
         var olTag = document.getElementsByTagName('ol')[0];
         olTag.appendChild(li);
+        
 }
 
 function purchase2(){
@@ -101,6 +103,7 @@ function purchase2(){
   var total = ((x * 17) * 1.04712).toFixed(2);
   totalp.push(total);
   localStorage.setItem("tota2", total);
+
   var li = document.createElement('li');
   var newText = document.createTextNode(x + " Order of " +" "+ meats[1] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
   li.appendChild(newText);
@@ -116,6 +119,7 @@ function purchase3(){
   var total = ((x * 14) * 1.04712).toFixed(2);
   totalp.push(total);
   localStorage.setItem("tota3", total);
+
   var li = document.createElement('li');
   var newText = document.createTextNode(x + " Order of " +" "+ meats[2] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
   li.appendChild(newText);
@@ -130,6 +134,7 @@ function purchase4(){
   var total = ((x * 20) * 1.04712).toFixed(2);
   totalp.push(total);
   localStorage.setItem("tota4", total);
+
   var li = document.createElement('li');
   var newText = document.createTextNode(x + " Order of " +" "+ meats[3] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
   li.appendChild(newText);
@@ -144,6 +149,7 @@ function purchase5(){
   var total = ((x * 18) * 1.04712).toFixed(2);
   totalp.push(total);
   localStorage.setItem("tota5", total);
+
   var li = document.createElement('li');
   var newText = document.createTextNode(x + " Order of " +" "+ meats[4] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
   li.appendChild(newText);
@@ -158,13 +164,23 @@ function purchase6(){
   var total = ((x * 21) * 1.04712).toFixed(2);
   totalp.push(total);
   localStorage.setItem("tota6", total);
+  
   var li = document.createElement('li');
   var newText = document.createTextNode(x + " Order of " +" "+ meats[5] + " " + " sub total is $" + subtotal + " and total after tax  is $" + total);
   li.appendChild(newText);
   var olTag = document.getElementsByTagName('ol')[0];
   olTag.appendChild(li);
 }
-
 function result(){
   location.href="index2.html";
 }
+
+
+var previous = null;
+var current = null;
+setInterval(function(){
+  current = JSON.stringify(json);
+  if (previous && current && previous !== current){
+    location.reload();
+  }
+}, 2000);
